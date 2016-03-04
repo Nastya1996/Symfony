@@ -11,10 +11,22 @@ use Symfony\Component\HttpFoundation\Response;
 class MainController extends Controller
 {
     /**
+
      * @Route("/index", name="index")
      */
+
     public function indexAction()
     {
         return new Response("Hello my friend");
     }
+
+    /**
+     * @Route("/home", name="home")
+     */
+
+    public function homeAction()
+    {
+        return array();
+    }
+
 }
